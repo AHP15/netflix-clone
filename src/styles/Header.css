@@ -1,0 +1,27 @@
+@media (min-width:300px) {
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+        transition: 0.2s;
+    }
+    .header.scroll{
+        background-color: black;
+    }
+    .header .header_logo{
+        width: 100px;
+    }
+    .header_logo > img{
+        width: 100%;
+    }
+    .header_icon{
+        color: red !important;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,31 @@
+@media (min-width:300px) {
+    .laoding_container, .movies{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        margin-top: 30px;
+    }
+    .skeleton{
+        margin: 5px !important;
+    }
+    .movie_page{
+        height: 100px;
+        background-color: black;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon_btn{
+        color: white !important;
+        background-color: white;
+        margin: 10px 50px;
+        border-radius: 50%;
+    }
+    .movies_container > h1{
+        color: white;
+        padding: 20px;
+    }
+}

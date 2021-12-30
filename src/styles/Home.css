@@ -1,0 +1,91 @@
+@media (min-width:300px) {
+    .home{
+        position: relative;
+        background-color: #252934;
+    }
+    .home_logo{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 100px;
+        height: 40px;
+        z-index: 10;
+    }
+    .home_signin{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 30px;
+        z-index: 10;
+    }
+    .home_signin > button{
+        padding: 10px 20px;
+        background-color: red;
+        color:white ;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .home_logo > img{
+        width: 100%;
+    }
+    .home_first{
+        height: 500px;
+        position: relative;
+    }
+    .home_first > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .home_first_info{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.4);
+        background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 75%,rgba(0,0,0,.8) 100%);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        padding: 15px;
+    }
+    .home_first_info *{
+        text-align: center;
+    }
+    .home_first_info > h1, .home_first_info h3{
+        margin-bottom: 15px;
+    }
+    .home_first_info > p{
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+}
+
+@media (min-width:1000px) {
+    .home_first{
+        height: 700px;
+    }
+    .home_first_info > h1{
+        font-size: 3rem;
+        max-width: 500px;
+    }
+    .home_first_info h3{
+        font-size: 2rem;
+    }
+    .home_logo{
+        left: 30px;
+        width: 120px;
+    }
+    .home_signin{
+        right: 30px;
+    }
+}

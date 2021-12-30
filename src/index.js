@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { UserProvider } from './contexts/userContext';
+import { MovieProvider } from './contexts/MovieContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MovieProvider>
+    <UserProvider>
+      <App />
+    </UserProvider>
+    </MovieProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

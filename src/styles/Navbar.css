@@ -1,0 +1,52 @@
+@media (min-width:300px) {
+    .navbar{
+        position: fixed;
+        width: 0;
+        height: 400px;
+        top: 30px;
+        right: 0;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: red;
+        overflow: hidden;
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navbar.active{
+        width: 250px;
+    }
+    .navbar > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .navbar > div input{
+        padding: 10px;
+        margin: 20px 5px;
+        border: none;
+        outline: none;
+    }
+    .navbar > div button{
+        padding: 10px;
+    }
+    .navbar > p{
+        margin: 10px;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        width: 90%;
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .navbar.active > p, .navbar.active > div{
+        opacity: 1;
+    }
+}
