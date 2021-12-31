@@ -71,7 +71,7 @@ export default function Movies({category, query}) {
             {
                 movies.map(movie => {
                     let movieName = movie?.original_title ?? movie?.title ?? movie?.original_name;
-                    if(movieName.indexOf(query) !== -1){
+                    if(movieName.toLowerCase().indexOf(query.toLowerCase()) !== -1){
                         return (
                             <MovieCard key={movie.id} props={movie} />
                         );
