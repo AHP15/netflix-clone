@@ -79,15 +79,21 @@ export default function MovieDetails() {
             </div>
             <div className='details_right'>
                 <h1>Trailer</h1>
-                <iframe
-                    width="100%"
-                    height="80%"
-                    src={youtube+movieDetail?.videos.results[0].key}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
+                {
+                    movieDetail?.videos.results[0] ? (
+                        <iframe
+                           width="100%"
+                           height="80%"
+                           src={youtube+movieDetail?.videos.results[0].key}
+                           title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    ):(
+                        <h1>No Trailer available</h1>
+                    )
+                }
             </div>
         </div>
     )
