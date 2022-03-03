@@ -55,14 +55,14 @@ export default function Signin() {
                     <input
                        type="email"
                        name='email'
-                       placeholder='Email'
+                       placeholder='Enter any email address'
                        value={user.email}
                        onChange={handleEmailChange}
                     />
                     <input
                         type="password"
                         name='password'
-                        placeholder='Password'
+                        placeholder='Enter any password'
                         value={user.password}
                         onChange={handlePassChange}
                     />
